@@ -1,9 +1,8 @@
 import React from "react";
 import { Button, Stack } from "@mui/material";
-import { getStyles } from "./Section.styles";
 import { navigate } from "gatsby";
-
-const serializeTitle = (title) => title.toLowerCase().replaceAll(" ", "-");
+import { serializeString } from "../../../utils/strings";
+import { getStyles } from "./Section.styles";
 
 export const Section = ({
   title,
@@ -15,7 +14,7 @@ export const Section = ({
   const styles = getStyles(dark);
 
   const handleClick = () => {
-    navigate(`/projects/${serializeTitle(title)}`);
+    navigate(`/projects/${serializeString(title)}`);
   };
 
   return (
@@ -29,7 +28,7 @@ export const Section = ({
         </Button>
       </Stack>
       <img
-        src={require(`../../../images/home/${serializeTitle(title)}.png`).default}
+        src={require(`../../../images/home/${serializeString(title)}.png`).default}
         alt={title}
       />
     </Stack>

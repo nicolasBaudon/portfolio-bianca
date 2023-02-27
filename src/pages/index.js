@@ -1,13 +1,10 @@
 import * as React from "react";
-import { ThemeProvider, CssBaseline, Typography } from "@mui/material";
-import { theme } from "../utils/theme";
+import { Typography } from "@mui/material";
 import { Head } from "../components/Common/Head/Head";
-import { Header } from "../components/Common/Header/Header";
 import { Hero } from "../components/Home/Hero/Hero";
 import "../styles/app.css";
 import { Section } from "../components/Home/Section/Section";
 import { homeSections } from "../utils/constants/homeSections";
-import { Footer } from "../components/Common/Footer/Footer";
 
 const titleStyles = {
   padding: 2,
@@ -20,10 +17,8 @@ const titleStyles = {
 
 const Home = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
+    <>
       <Head />
-      <Header />
       <Hero />
       <Typography sx={titleStyles} component="h3" id="projects">
         Projects
@@ -33,8 +28,7 @@ const Home = () => {
           <Section {...section} />
         </React.Fragment>
       ))}
-      <Footer />
-    </ThemeProvider>
+    </>
   );
 };
 
