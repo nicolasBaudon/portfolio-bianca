@@ -1,6 +1,5 @@
 export const styles = {
   container: {
-    mb: 8,
     mt: { xs: 4, md: 8 },
     "> img": {
       width: 1,

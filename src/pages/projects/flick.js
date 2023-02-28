@@ -2,6 +2,13 @@ import { Stack } from "@mui/material";
 import React from "react";
 import { Head } from "../../components/Common/Head/Head";
 import { HeaderSection } from "../../components/Common/HeaderSection/HeaderSection";
+import { Section2 } from "../../components/FlickPage/Section2/Section2";
+import { Section3 } from "../../components/FlickPage/Section3/Section3";
+import { Section4 } from "../../components/FlickPage/Section4/Section4";
+import { Section5 } from "../../components/FlickPage/Section5/Section5";
+import { Section6 } from "../../components/FlickPage/Section6/Section6";
+import { Section7 } from "../../components/FlickPage/Section7/Section7";
+import { Section8 } from "../../components/FlickPage/Section8/Section8";
 
 const FlickPage = () => (
   <>
@@ -37,6 +44,13 @@ const FlickPage = () => (
           </>
         }
       />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Section7 />
+      <Section8 />
     </Stack>
   </>
 );

@@ -5,7 +5,7 @@ export const styles = {
     button: {
       width: "max-content",
       img: {
-        width: { xs: 40, md: 60 },
+        width: { xs: 36, md: 50 },
       },
     },
   },
