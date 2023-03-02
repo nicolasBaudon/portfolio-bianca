@@ -15,6 +15,7 @@ export const styles = {
     ".gatsby-image-wrapper": { mt: 4, width: { xs: 1, md: 500 } },
   },
   contentContainer: {
+    gap: 2,
     width: { xs: 1, md: 0.5 },
   },
 };

@@ -9,6 +9,10 @@ import { Section5 } from "../../components/FlickPage/Section5/Section5";
 import { Section6 } from "../../components/FlickPage/Section6/Section6";
 import { Section7 } from "../../components/FlickPage/Section7/Section7";
 import { Section8 } from "../../components/FlickPage/Section8/Section8";
+import { Section9 } from "../../components/FlickPage/Section9/Section9";
+import { DesignSystemSection } from "../../components/Common/DesignSystemSection/DesignSystemSection";
+import { EndSection } from "../../components/Common/EndSection/EndSection";
+import designSystemImg from "../../images/projects/flick/design-system.png";
 
 const FlickPage = () => (
   <>
@@ -51,6 +55,16 @@ const FlickPage = () => (
       <Section6 />
       <Section7 />
       <Section8 />
+      <Section9 />
+      <DesignSystemSection
+        title="Design system"
+        descriptionItems={[
+          "The complexity of the application required various screens that included all kinds of components and covered all the corresponding functions: landing page, login, home, search results, ticket details, purchase confirmation, tutorials, profile, put on sale process, exchange, withdraw and the different casuistics of each screen.",
+          "To maintain consistency and ensure efficient design for development transfer, I created a design system based on reusable components with their respective states, ordered molecularly: from organisms to molecules.",
+        ]}
+        images={[designSystemImg]}
+      />
+      <EndSection />
     </Stack>
   </>
 );

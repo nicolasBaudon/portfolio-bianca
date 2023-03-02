@@ -2,6 +2,7 @@ import { Stack } from "@mui/material";
 import React from "react";
 import { Head } from "../../components/Common/Head/Head";
 import { HeaderSection } from "../../components/Common/HeaderSection/HeaderSection";
+import { EndSection } from "../../components/Common/EndSection/EndSection";
 
 const HolaPage = () => (
   <>
@@ -33,6 +34,7 @@ const HolaPage = () => (
           </>
         }
       />
+      <EndSection />
     </Stack>
   </>
 );

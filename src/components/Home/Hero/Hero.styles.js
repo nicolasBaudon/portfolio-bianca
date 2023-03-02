@@ -2,6 +2,8 @@ import { theme } from "../../../utils/theme";
 
 export const styles = {
   container: {
+    maxWidth: 1350,
+    mx: "auto",
     flexDirection: "row",
     p: "60px",
     justifyContent: "space-between",

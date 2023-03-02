@@ -1,5 +1,7 @@
 export const styles = {
   container: {
+    maxWidth: 1350,
+    mx: "auto",
     gap: 2,
     mt: 16,
     px: { xs: 2, md: 6 },

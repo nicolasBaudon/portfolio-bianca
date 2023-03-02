@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Stack } from "@mui/material";
+import { Button, Stack, Box } from "@mui/material";
 import { navigate } from "gatsby";
 import { serializeString } from "../../../utils/strings";
 import { getStyles } from "./Section.styles";
@@ -18,19 +18,24 @@ export const Section = ({
   };
 
   return (
-    <Stack sx={styles.container}>
-      <Stack sx={styles.contentContainer}>
-        <h4>{title}</h4>
-        <h5>{subtitle}</h5>
-        <p>{description}</p>
-        <Button onClick={handleClick} variant="contained">
-          {buttonLabel}
-        </Button>
+    <Box sx={styles.rootContainer}>
+      <Stack sx={styles.container}>
+        <Stack sx={styles.contentContainer}>
+          <h4>{title}</h4>
+          <h5>{subtitle}</h5>
+          <p>{description}</p>
+          <Button onClick={handleClick} variant="contained">
+            {buttonLabel}
+          </Button>
+        </Stack>
+        <img
+          src={
+            require(`../../../images/home/${serializeString(title)}.png`)
+              .default
+          }
+          alt={title}
+        />
       </Stack>
-      <img
-        src={require(`../../../images/home/${serializeString(title)}.png`).default}
-        alt={title}
-      />
-    </Stack>
+    </Box>
   );
 };

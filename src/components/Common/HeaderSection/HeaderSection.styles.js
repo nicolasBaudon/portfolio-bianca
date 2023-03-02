@@ -8,6 +8,8 @@ export const styles = {
     },
   },
   contentContainer: {
+    maxWidth: 1350,
+    mx: "auto",
     gap: 1,
     px: { xs: 2, md: 6 },
     mb: 6,

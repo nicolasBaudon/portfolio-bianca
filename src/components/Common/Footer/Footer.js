@@ -1,5 +1,5 @@
 import React from "react";
-import { IconButton, Stack } from "@mui/material";
+import { IconButton, Stack, Box } from "@mui/material";
 import linkedin from "../../../images/linkedin.svg";
 import mail from "../../../images/mail.svg";
 import behance from "../../../images/behance.svg";
@@ -27,12 +27,14 @@ export const Footer = () => {
   const handleClick = (url) => window.open(url, "_blank", "noopener");
 
   return (
-    <Stack sx={styles.container}>
-      {socialMedias.map((media) => (
-        <IconButton key={media.id} onClick={() => handleClick(media.url)}>
-          <img src={media.icon} alt="" />
-        </IconButton>
-      ))}
-    </Stack>
+    <Box>
+      <Stack sx={styles.container}>
+        {socialMedias.map((media) => (
+          <IconButton key={media.id} onClick={() => handleClick(media.url)}>
+            <img src={media.icon} alt="" />
+          </IconButton>
+        ))}
+      </Stack>
+    </Box>
   );
 };
