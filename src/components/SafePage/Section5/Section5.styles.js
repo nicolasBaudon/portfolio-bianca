@@ -10,16 +10,14 @@ export const styles = {
       fontWeight: 300,
       m: 0,
     },
-    p: {
-      fontSize: { xs: 16, md: 18 },
-      fontWeight: 300,
+    ul: {
+      listStyleType: "none",
+      p: 0,
+      li: {
+        fontSize: { xs: 14, md: 16 },
+        fontWeight: 300,
+      },
     },
-  },
-  imagesContainer: {
-    mt: 4,
-    width: 1,
-    gap: 4,
-    alignItems: "center",
-    img: { width: { xs: 1, md: 500 } },
+    ".gatsby-image-wrapper": { mt: 4, width: { xs: 1, md: 500 } },
   },
 };

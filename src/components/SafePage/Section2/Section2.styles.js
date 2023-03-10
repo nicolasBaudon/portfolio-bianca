@@ -14,12 +14,6 @@ export const styles = {
       fontSize: { xs: 16, md: 18 },
       fontWeight: 300,
     },
-  },
-  imagesContainer: {
-    mt: 4,
-    width: 1,
-    gap: 4,
-    alignItems: "center",
-    img: { width: { xs: 1, md: 500 } },
+    ".gatsby-image-wrapper": { mt: 4, width: { xs: 1, md: 500 } },
   },
 };

@@ -3,6 +3,13 @@ import React from "react";
 import { Head } from "../../components/Common/Head/Head";
 import { HeaderSection } from "../../components/Common/HeaderSection/HeaderSection";
 import { EndSection } from "../../components/Common/EndSection/EndSection";
+import { Section2 } from "../../components/SafePage/Section2/Section2";
+import { Section3 } from "../../components/SafePage/Section3/Section3";
+import { Section4 } from "../../components/SafePage/Section4/Section4";
+import { Section5 } from "../../components/SafePage/Section5/Section5";
+import { DesignSystemSection } from "../../components/Common/DesignSystemSection/DesignSystemSection";
+import designSystemImg1 from "../../images/projects/safe/design-system1.png";
+import designSystemImg2 from "../../images/projects/safe/design-system2.png";
 
 const SafePage = () => (
   <>
@@ -33,6 +40,18 @@ const SafePage = () => (
             </span>
           </>
         }
+      />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <DesignSystemSection
+        title="Design system"
+        descriptionItems={[
+          "The complexity of the application required several screens that included all kinds of components and covered all the corresponding functions: Login, registration, profile, fundamental options: alert button, connection with friends, map, search and its different casuistics.",
+          "We create a UI Kit based on components designed from atoms to molecules, from simple components to complex components. The UI Kit was ordered and designed with the aim of facilitating the prototyping work and to maintain the team's design system.",
+        ]}
+        images={[designSystemImg1, designSystemImg2]}
       />
       <EndSection />
     </Stack>
