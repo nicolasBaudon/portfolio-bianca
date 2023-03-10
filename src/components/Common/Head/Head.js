@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
+import favicon from '../../../images/favicon.png'
 
 const DESCRIPTION = "Bianca Ramonda Porfolio";
 
@@ -9,8 +10,7 @@ export const Head = ({ title }) => {
   return (
     <Helmet>
       <title>{headTitle}</title>
-      {/* TODO: add favicon */}
-      <link rel="icon" href="" />
+      <link rel="icon" href={favicon} />
       <meta name="viewport" content="initial-scale=1, width=device-width" />
       <meta name="description" content={DESCRIPTION} />
 

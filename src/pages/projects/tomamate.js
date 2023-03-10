@@ -3,6 +3,15 @@ import React from "react";
 import { Head } from "../../components/Common/Head/Head";
 import { HeaderSection } from "../../components/Common/HeaderSection/HeaderSection";
 import { EndSection } from "../../components/Common/EndSection/EndSection";
+import { DesignSystemSection } from "../../components/Common/DesignSystemSection/DesignSystemSection";
+import designSystemImg1 from "../../images/projects/tomamate/design-system1.png";
+import designSystemImg2 from "../../images/projects/tomamate/design-system2.png";
+import { Section2 } from "../../components/TomamatePage/Section2/Section2";
+import { Section2dot1 } from "../../components/TomamatePage/Section2.1/Section2.1";
+import { Section3 } from "../../components/TomamatePage/Section3/Section3";
+import { Section4 } from "../../components/TomamatePage/Section4/Section4";
+import { Section5 } from "../../components/TomamatePage/Section5/Section5";
+import { Section6 } from "../../components/TomamatePage/Section6/Section6";
 
 const TomamatePage = () => (
   <>
@@ -44,6 +53,19 @@ const TomamatePage = () => (
             </span>
           </>
         }
+      />
+      <Section2 />
+      <Section2dot1 />
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <DesignSystemSection
+        title="Design system"
+        descriptionItems={[
+          "The design system was composed of components ordered and categorized in a hierarchical way. Each component was designed in such a way that they can be quickly reused and modified, which favored design work and communication and understanding with the development team. We carry out deliverables in stages where we iterate the design based on feedback from the client and the UX team, contributing research based on tests and demos.",
+        ]}
+        images={[designSystemImg1, designSystemImg2]}
       />
       <EndSection />
     </Stack>
