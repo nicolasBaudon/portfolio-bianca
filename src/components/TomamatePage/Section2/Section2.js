@@ -1,6 +1,5 @@
 import React from "react";
 import { Stack, Box } from "@mui/material";
-import { StaticImage } from "gatsby-plugin-image";
 import { styles } from "./Section2.styles";
 
 export const Section2 = () => (

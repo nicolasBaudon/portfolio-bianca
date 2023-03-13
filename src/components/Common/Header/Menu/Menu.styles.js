@@ -18,7 +18,7 @@ export const styles = {
     img: {
       transition: "all 0.3s",
       width: { xs: 30, sm: 40 },
-      ["&.open"]: {
+      "&.open": {
         transform: "rotate(-180deg)",
       },
     },

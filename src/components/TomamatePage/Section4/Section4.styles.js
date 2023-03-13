@@ -13,7 +13,7 @@ export const styles = {
     gap: 4,
     py: 12,
     px: { xs: 2, md: 6 },
-    [".text"]: {
+    ".text": {
       width: { xs: 1, md: 0.5 },
       fontSize: { xs: 16, md: 22 },
       fontWeight: 300,

@@ -15,7 +15,7 @@ export const styles = {
       listStyleType: "none",
       p: 0,
       li: {
-        ['&:not(:first-child)']: {
+        '&:not(:first-child)': {
           mt: 2,
         },
         display: "flex",

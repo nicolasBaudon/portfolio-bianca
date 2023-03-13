@@ -36,7 +36,7 @@ export const getStyles = (isDark) => ({
       color: isDark ? black : white,
       borderRadius: 32,
       fontSize: 16,
-      ["&:hover"]: {
+      "&:hover": {
         backgroundColor: isDark ? white : black,
       },
     },

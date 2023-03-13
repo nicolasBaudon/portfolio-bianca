@@ -47,6 +47,10 @@ export const Menu = ({ open, handleOpen }) => {
     handleOpen();
   };
 
+  const handleDownloadResume = () => {
+    window.open("/files/ResumeBiancaRamonda.pdf", "_blank", "noopener noreferrer");
+  }
+
   return (
     <Dialog
       open={open}
@@ -64,7 +68,7 @@ export const Menu = ({ open, handleOpen }) => {
         <Button sx={styles.buttonItem} onClick={handleOpenMail}>
           <p>Contact</p>
         </Button>
-        <Button sx={styles.buttonItem}>
+        <Button sx={styles.buttonItem} onClick={handleDownloadResume}>
           <p>Download resume</p>
         </Button>
         <Button sx={styles.buttonItem} onClick={handleOpenProjectsMenu}>

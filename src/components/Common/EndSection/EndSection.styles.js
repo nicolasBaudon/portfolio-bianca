@@ -20,15 +20,15 @@ export const styles = {
       color: "#fff",
       borderRadius: 32,
       fontSize: 16,
-      ["&.MuiButton-outlined"]: {
+      "&.MuiButton-outlined": {
         backgroundColor: "transparent",
         borderColor: "#000",
         color: "#000",
-        ["&:hover"]: {
+        "&:hover": {
           backgroundColor: 'transparent',
         },
       },
-      ["&:hover"]: {
+      "&:hover": {
         backgroundColor: "#000",
       },
     },
