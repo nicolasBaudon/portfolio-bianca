@@ -2,7 +2,7 @@ export const styles = {
   container: {
     maxWidth: 1350,
     mx: "auto",
-    gap: 4,
+    gap: 8,
     mt: 16,
     px: { xs: 2, md: 6 },
     h3: {
@@ -10,16 +10,17 @@ export const styles = {
       fontWeight: 300,
       m: 0,
     },
-    p: {
+  },
+  row: {
+    flexDirection: { md: "row" },
+    alignItems: "center",
+    justifyContent: "space-evenly",
+    gap: 4,
+    ".text": {
+      width: { md: 0.5 },
       fontSize: { xs: 16, md: 18 },
       fontWeight: 300,
     },
-  },
-  imagesContainer: {
-    mt: 4,
-    width: 1,
-    gap: 4,
-    alignItems: "center",
-    img: { width: { xs: 1, md: 600 } },
+    ".gatsby-image-wrapper": { maxWidth: 260 },
   },
 };

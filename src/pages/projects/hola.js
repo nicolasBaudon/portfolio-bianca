@@ -3,6 +3,11 @@ import React from "react";
 import { Head } from "../../components/Common/Head/Head";
 import { HeaderSection } from "../../components/Common/HeaderSection/HeaderSection";
 import { EndSection } from "../../components/Common/EndSection/EndSection";
+import { Section2 } from "../../components/HolaPage/Section2/Section2";
+import { Section3 } from "../../components/HolaPage/Section3/Section3";
+import { Section4 } from "../../components/HolaPage/Section4/Section4";
+import { DesignSystemSection } from "../../components/Common/DesignSystemSection/DesignSystemSection";
+import designSystemImg from '../../images/projects/hola/design-system.png';
 
 const HolaPage = () => (
   <>
@@ -33,6 +38,17 @@ const HolaPage = () => (
             </span>
           </>
         }
+      />
+      <Section2 />
+      <Section3 />
+      <Section4 />
+      <DesignSystemSection
+        title="Design System"
+        descriptionItems={[
+          "The initial screens were composed of different components of all kinds since we had: login, registration, home screen, profile, various functions such as: favorites, my experiences, map, recommendations, search, purchase process with reservation and process of sale.",
+          "Each component was designed to facilitate various prototyping processes, maintaining the design system, forming the UI Kit, with possibilities of modification or addition.",
+        ]}
+        images={[designSystemImg]}
       />
       <EndSection />
     </Stack>
