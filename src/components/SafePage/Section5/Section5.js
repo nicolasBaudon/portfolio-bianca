@@ -22,7 +22,7 @@ export const Section5 = () => (
         <li>Search bar: to search for destinations, functions or contacts.</li>
       </ul>
       <Box width={1} textAlign="center">
-        <StaticImage src="../../../images/projects/safe/section2.png" />
+        <StaticImage src="../../../images/projects/safe/section5.png" />
       </Box>
     </Stack>
   </Box>

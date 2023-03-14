@@ -32,7 +32,7 @@ export const Section3 = () => (
         trails, etc.
       </p>
       <Box width={1} textAlign="center">
-        <StaticImage src="../../../images/projects/safe/section2.png" />
+        <StaticImage src="../../../images/projects/safe/section3.png" />
       </Box>
     </Stack>
   </Box>

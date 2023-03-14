@@ -45,8 +45,7 @@ export const Section5 = () => (
           Finally, we brainstormed to give this product a new name and logo: we
           made a presentation for the client where he chose the new logo and
           name of his brand "TOMAMATE" - A play on words that includes the verb
-          "drink" and the word "mate" and the logo represents a set of mate.a
-          set of mate.
+          "drink" and the word "mate" and the logo represents a set of mate.
         </p>
         <StaticImage src="../../../images/projects/tomamate/section5.4.png" />
       </Stack>
