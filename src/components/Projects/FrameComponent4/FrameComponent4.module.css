@@ -1,0 +1,53 @@
+.myRole {
+  position: relative;
+  line-height: 150%;
+  font-weight: 700;
+}
+.responsibilities {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-5xl);
+  font-size: var(--body-18-size);
+  color: var(--color-black);
+  font-family: var(--text);
+}
+.responsibilities,
+.roleDescription,
+.roleDescriptionWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.roleDescription {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-21xl);
+}
+.roleDescriptionWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 0 var(--padding-5xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--bg-line);
+  font-family: var(--title-h2);
+}
+@media screen and (max-width: 1050px) {
+  .myRole {
+    font-size: var(--font-size-13xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .roleDescription {
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .myRole {
+    font-size: var(--font-size-5xl);
+    line-height: 36px;
+  }
+}

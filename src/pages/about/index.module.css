@@ -1,0 +1,132 @@
+.sobre {
+  text-decoration: none;
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 53px;
+}
+.activeTabBackground {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  border-radius: var(--br-11xs);
+  background-color: var(--bg-line);
+}
+.tabActive {
+  width: 53px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.sobre1 {
+  text-decoration: none;
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 71px;
+}
+.tabActiveChild {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  border-radius: var(--br-11xs);
+}
+.tabActive1 {
+  width: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+  cursor: pointer;
+}
+.sobre2 {
+  text-decoration: none;
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 79px;
+  cursor: pointer;
+}
+.nav,
+.tabDefault {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.tabDefault {
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.nav {
+  width: 299px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.header,
+.simpleFooter {
+  flex-direction: row;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.header {
+  flex: 1;
+  box-shadow: 0 0 7.3px rgba(0, 0, 0, 0.13);
+  background-color: var(--bg-gray);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-19xl) var(--padding-xl) var(--padding-16xl);
+}
+.simpleFooter {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 0 12px;
+  text-align: left;
+  font-size: var(--body-18-size);
+  color: var(--bg-line);
+  font-family: var(--font-inter);
+}
+.aboutSimpleFooter,
+.content,
+.simpleFooter {
+  display: flex;
+  align-items: flex-start;
+}
+.content {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.aboutSimpleFooter {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-gray);
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 44px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 750px) {
+  .aboutSimpleFooter {
+    gap: var(--gap-3xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .header {
+    gap: var(--gap-361xl);
+  }
+}

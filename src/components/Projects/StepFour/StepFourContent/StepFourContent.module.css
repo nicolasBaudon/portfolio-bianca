@@ -1,0 +1,61 @@
+.creationOfSops {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 150%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.additionallyWeDevelop {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 150%;
+  font-family: var(--font-nunito);
+  color: var(--color-black);
+}
+.image93Icon,
+.stepFourContent {
+  align-self: stretch;
+  max-width: 100%;
+}
+.image93Icon {
+  position: relative;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.stepFourContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--bg-line);
+  font-family: var(--title-h2);
+}
+@media screen and (max-width: 1050px) {
+  .creationOfSops {
+    font-size: var(--font-size-13xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .stepFourContent {
+    gap: var(--gap-xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .creationOfSops {
+    font-size: var(--font-size-5xl);
+    line-height: 36px;
+  }
+  .additionallyWeDevelop {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+}

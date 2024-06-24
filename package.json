@@ -23,6 +23,7 @@
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-gatsby-cloud": "^5.7.0",
     "gatsby-plugin-image": "^3.7.0",
+    "gatsby-plugin-layout": "^4.13.1",
     "gatsby-plugin-react-helmet": "^6.7.0",
     "gatsby-plugin-sharp": "^5.7.0",
     "gatsby-source-filesystem": "^5.7.0",
@@ -30,6 +31,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-slick": "^0.30.2",
     "yarn": "^1.22.19"
   },
   "devDependencies": {

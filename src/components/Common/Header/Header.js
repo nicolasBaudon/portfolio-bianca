@@ -1,22 +1,40 @@
-import React, { useState } from "react";
-import { Stack, IconButton, Box } from "@mui/material";
-import hamburgerIcon from "../../../images/hamburger.svg";
-import { Menu } from "./Menu/Menu";
-import { styles } from "./Header.styles";
+import * as React from "react";
+import { useCallback } from "react";
+import { navigate } from "gatsby";
+import PropTypes from "prop-types";
+import * as styles from "./Header.module.css";
 
-export const Header = () => {
-  const [menu, setMenu] = useState(false);
+export const Header = ({ className = "", projectsRedirect }) => {
+  const onTabDefaultClick = () => {
+    navigate("/about");
+  }
 
-  const handleOpenMenu = () => setMenu((prevState) => !prevState);
+  const onTabDefault1Click = () => {
+    navigate("/contact");
+  }
 
   return (
-    <Box>
-      <Stack sx={styles.container}>
-        <IconButton sx={styles.button} onClick={handleOpenMenu}>
-          <img src={hamburgerIcon} alt="" />
-        </IconButton>
-        <Menu open={menu} handleOpen={handleOpenMenu} />
-      </Stack>
-    </Box>
+    <header className={[styles.header, className].join(" ")}>
+      <nav className={styles.nav}>
+        <div className={styles.tabDefault} onClick={onTabDefaultClick}>
+          <a className={styles.sobre}>About</a>
+        </div>
+        <div className={styles.tabActive} onClick={projectsRedirect}>
+          <a className={styles.sobre1}>Projects</a>
+          <div className={styles.tabActiveChild} />
+        </div>
+        <div className={styles.tabDefault1} onClick={onTabDefault1Click}>
+          <a className={styles.sobre2}>
+            Contacts
+          </a>
+        </div>
+      </nav>
+    </header>
   );
 };
+
+Header.propTypes = {
+  className: PropTypes.string,
+  projectsRedirect: PropTypes.func,
+};
+

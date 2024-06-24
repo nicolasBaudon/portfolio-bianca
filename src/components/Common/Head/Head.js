@@ -5,12 +5,23 @@ import favicon from '../../../images/favicon.png'
 const DESCRIPTION = "Bianca Ramonda Porfolio";
 
 export const Head = ({ title }) => {
-  const headTitle = title ?? "Bianca Ramonda";
+  const headTitle = title ?? "Bianca Ramonda | UX/UI Designer";
 
   return (
     <Helmet>
       <title>{headTitle}</title>
       <link rel="icon" href={favicon} />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        charset="UTF-8"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+      />
       <meta name="viewport" content="initial-scale=1, width=device-width" />
       <meta name="description" content={DESCRIPTION} />
 

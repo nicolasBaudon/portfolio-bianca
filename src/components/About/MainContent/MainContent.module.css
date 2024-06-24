@@ -1,0 +1,150 @@
+.title {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+  font-size: inherit;
+  line-height: 72px;
+  font-weight: 700;
+  font-family: inherit;
+}
+.image118Icon {
+  height: 245px;
+  width: 245px;
+  position: relative;
+  object-fit: contain;
+}
+.myWorkExperience {
+  margin-block-start: 0;
+  margin-block-end: 24px;
+}
+.conductingUsabilityTests,
+.craftingSpecificAb,
+.designQaIn,
+.designingMvpsFor,
+.formulatingSopsFor {
+  margin-bottom: 0;
+}
+.designingMvpsForWebAppsWi {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: var(--padding-13xl);
+}
+.text {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  display: inline-block;
+  min-width: 586px;
+  max-width: 100%;
+}
+.aboutMeContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-34xl);
+  max-width: 100%;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-nunito);
+}
+.aboutMe,
+.aboutMeContent,
+.text1 {
+  align-self: stretch;
+}
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+}
+.text1 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 150%;
+  font-family: var(--font-nunito);
+  color: var(--color-black);
+}
+.aboutMeParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  max-width: 100%;
+}
+.buttonPrimary {
+  height: 48px;
+  width: 400px;
+  max-width: 100%;
+}
+.callToAction,
+.mainContent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.callToAction {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+}
+.mainContent {
+  width: 1200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-37xl);
+  text-align: left;
+  font-size: var(--title-h2-size);
+  color: var(--bg-line);
+  font-family: var(--title-h2);
+}
+@media screen and (max-width: 750px) {
+  .title {
+    text-align: center;
+    font-size: var(--font-size-19xl);
+    line-height: 58px;
+  }
+  .aboutMeContent {
+    justify-content: center;
+  }
+  .text {
+    min-width: 100%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .aboutMeContent {
+    gap: var(--gap-7xl);
+  }
+  .aboutMe,
+  .aboutMeParent {
+    gap: var(--gap-base);
+  }
+  .mainContent {
+    gap: var(--gap-9xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: var(--font-size-10xl);
+    line-height: 43px;
+  }
+  .text,
+  .text1 {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .buttonPrimary {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

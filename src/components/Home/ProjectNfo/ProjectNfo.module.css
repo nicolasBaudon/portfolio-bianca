@@ -1,0 +1,127 @@
+.b,
+.r {
+  position: relative;
+  display: inline-block;
+  min-width: 17px;
+}
+.r {
+  min-width: 22px;
+  z-index: 1;
+  margin-left: -7.3px;
+}
+.favicon {
+  align-self: stretch;
+  border-radius: 36.36px;
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-5xs-3) var(--padding-7xs) var(--padding-5xs-2);
+}
+.faviconWrapper {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.text {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+  font-weight: 700;
+}
+.retailAndWholesale {
+  margin-block-start: 0;
+  margin-block-end: 24px;
+}
+.eCommerceOfArgentine {
+  margin: 0;
+}
+.text1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--body-18-size);
+  line-height: 150%;
+  font-family: var(--font-nunito);
+  color: var(--font-medium-emphasis);
+  display: inline-block;
+}
+.botoSecudrio {
+  width: 152px;
+  height: 43px;
+  cursor: pointer;
+}
+.frameParent,
+.projectNfo,
+.textParent {
+  display: flex;
+  justify-content: flex-start;
+}
+.textParent {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xl);
+  font-size: var(--font-size-21xl);
+  color: var(--bg-line);
+  font-family: var(--title-h2);
+}
+.frameParent,
+.projectNfo {
+  flex: 1;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.frameParent {
+  flex-direction: column;
+  align-items: flex-end;
+  padding: var(--padding-5xl) var(--padding-5xl) var(--padding-140xl-4)
+    var(--padding-47xl);
+  gap: var(--gap-67xl);
+  flex-shrink: 0;
+}
+.projectNfo {
+  border-radius: 0 var(--br-5xl) var(--br-5xl) 0;
+  background-color: var(--bg-white);
+  flex-direction: row;
+  align-items: flex-start;
+  padding: var(--padding-12xs-2) 0 0;
+  min-width: 325px;
+  text-align: left;
+  font-size: var(--font-size-10xl-1);
+  color: var(--bg-white);
+  font-family: var(--font-montserrat);
+}
+@media screen and (max-width: 1050px) {
+  .text {
+    font-size: var(--font-size-13xl);
+    line-height: 48px;
+  }
+  .projectNfo {
+    flex: 1;
+  }
+}
+@media screen and (max-width: 750px) {
+  .frameParent {
+    gap: var(--gap-24xl);
+    padding-left: var(--padding-14xl);
+    padding-top: var(--padding-xl);
+    padding-bottom: var(--padding-85xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .b,
+  .r {
+    font-size: var(--font-size-4xl);
+  }
+  .text {
+    font-size: var(--font-size-5xl);
+    line-height: 36px;
+  }
+  .frameParent {
+    gap: var(--gap-2xl);
+  }
+}

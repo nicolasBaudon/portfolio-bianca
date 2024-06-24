@@ -1,0 +1,85 @@
+.pieChartIcon {
+  height: 128px;
+  width: 128px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.websiteQualityAssurance {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 268px;
+  max-width: 100%;
+}
+.responsibilityTitles {
+  flex: 1;
+  border-radius: var(--br-5xl);
+  background-color: var(--bg-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  min-width: 382px;
+  max-width: 100%;
+}
+.selectIcon {
+  height: 128px;
+  width: 128px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.searchForSolutions {
+  flex: 1;
+  position: relative;
+  line-height: 150%;
+  font-weight: 300;
+  display: inline-block;
+  min-width: 268px;
+  max-width: 100%;
+}
+.responsibilitiesGrid,
+.responsibilityIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.responsibilityIcons {
+  flex: 1;
+  border-radius: var(--br-5xl);
+  background-color: var(--bg-white);
+  align-items: center;
+  padding: var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-base);
+  min-width: 382px;
+}
+.responsibilitiesGrid {
+  align-self: stretch;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--gap-5xl);
+  text-align: left;
+  font-size: var(--body-18-size);
+  color: var(--color-black);
+  font-family: var(--text);
+}
+@media screen and (max-width: 750px) {
+  .responsibilityIcons,
+  .responsibilityTitles {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 450px) {
+  .responsibilityIcons,
+  .responsibilityTitles {
+    min-width: 100%;
+  }
+}

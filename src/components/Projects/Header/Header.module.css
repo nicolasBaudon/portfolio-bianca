@@ -1,0 +1,116 @@
+.backIcon {
+  height: 21.1px;
+  width: 11px;
+  position: relative;
+}
+.materialSymbolsLightarrowB {
+  height: 30px;
+  width: 32px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-10xs) var(--padding-6xs);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.sobre {
+  text-decoration: none;
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 53px;
+}
+.tabDefault {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sobre1 {
+  text-decoration: none;
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 71px;
+}
+.tabActiveChild {
+  align-self: stretch;
+  height: 2px;
+  position: relative;
+  border-radius: var(--br-11xs);
+  background-color: var(--bg-line);
+}
+.tabActive {
+  cursor: pointer;
+  width: 71px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.sobre2 {
+  text-decoration: none;
+  position: relative;
+  line-height: 28px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 79px;
+}
+.tabDefault1 {
+  cursor: pointer;
+  justify-content: flex-start;
+}
+.header,
+.nav,
+.tabDefault1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.nav {
+  width: 299px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.header {
+  align-self: stretch;
+  box-shadow: 0 0 7.3px rgba(0, 0, 0, 0.13);
+  background-color: var(--bg-gray);
+  justify-content: flex-start;
+  padding: var(--padding-19xl) var(--padding-101xl) var(--padding-16xl);
+  gap: var(--gap-396xl);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+  text-align: left;
+  font-size: var(--body-18-size);
+  color: var(--bg-line);
+  font-family: var(--font-inter);
+}
+@media screen and (max-width: 1050px) {
+  .header {
+    gap: var(--gap-188xl);
+    padding-left: var(--padding-41xl);
+    padding-right: var(--padding-41xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .header {
+    justify-content: space-between;
+    gap: 24px;
+    padding-left: 16px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}

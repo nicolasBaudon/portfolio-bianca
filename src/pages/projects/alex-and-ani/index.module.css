@@ -1,0 +1,217 @@
+.latechFactory {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 150%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.alexAndAni {
+  margin-block-start: 0;
+  margin-block-end: 24px;
+}
+.currentlyLatechProvides {
+  margin: 0;
+}
+.alexAndAniContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 150%;
+  font-family: var(--font-nunito);
+  color: var(--color-black);
+  display: inline-block;
+}
+.projectTitle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-5xs);
+  box-sizing: border-box;
+  gap: var(--gap-21xl);
+  max-width: 100%;
+}
+.forLegalPrivacy {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.identifyPainPoints {
+  margin: 0;
+  position: relative;
+  font-size: inherit;
+  line-height: 150%;
+  font-weight: 700;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.image79Icon,
+.inTheFirst {
+  align-self: stretch;
+  position: relative;
+}
+.inTheFirst {
+  font-size: var(--font-size-5xl);
+  line-height: 150%;
+  font-family: var(--font-nunito);
+  color: var(--color-black);
+}
+.image79Icon {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.forLegalPrivacyReasonsIAParent,
+.stepOne {
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.stepOne {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-21xl);
+  max-width: 100%;
+  font-size: var(--font-size-21xl);
+  color: var(--bg-line);
+  font-family: var(--title-h2);
+}
+.forLegalPrivacyReasonsIAParent {
+  gap: var(--gap-45xl);
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-nunito);
+}
+.content,
+.forLegalPrivacyReasonsIAParent,
+.projectInfo {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.projectInfo {
+  width: 1200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-37xl);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--bg-line);
+  font-family: var(--title-h2);
+}
+.content {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl) 15px;
+  box-sizing: border-box;
+}
+.bienvelopeFillIcon,
+.bilinkedinIcon,
+.phinstagramLogoFillIcon {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  min-height: 48px;
+}
+.icons {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.biancaRamonda2024 {
+  position: relative;
+}
+.footerIcons {
+  width: 192px;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-13xl);
+}
+.footer,
+.footerIcons,
+.portfolioAa {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  align-self: stretch;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-9xl) var(--padding-xl);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--font-medium-emphasis);
+  font-family: var(--font-nunito);
+}
+.portfolioAa {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-gray);
+  overflow: hidden;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-55xl);
+  line-height: normal;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 1200px) {
+  .forLegalPrivacyReasonsIAParent {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 1050px) {
+  .identifyPainPoints,
+  .latechFactory {
+    font-size: var(--font-size-13xl);
+    line-height: 48px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .projectTitle,
+  .stepOne {
+    gap: var(--gap-xl);
+  }
+  .forLegalPrivacyReasonsIAParent {
+    gap: var(--gap-base);
+  }
+  .projectInfo {
+    gap: var(--gap-9xl);
+  }
+  .portfolioAa {
+    gap: var(--gap-18xl);
+  }
+}
+@media screen and (max-width: 450px) {
+  .latechFactory {
+    font-size: var(--font-size-5xl);
+    line-height: 36px;
+  }
+  .alexAndAniContainer,
+  .forLegalPrivacy {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .identifyPainPoints {
+    font-size: var(--font-size-5xl);
+    line-height: 36px;
+  }
+  .inTheFirst {
+    font-size: var(--font-size-lgi);
+    line-height: 29px;
+  }
+  .portfolioAa {
+    gap: var(--gap-lg);
+  }
+}

@@ -3,7 +3,8 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: 'Bianca Ramonda | UX/UI Designer',
+    description: "Welcome to Bianca's Ramonda Portfolio",
   },
   plugins: [
     "gatsby-plugin-gatsby-cloud",
@@ -12,6 +13,7 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     "gatsby-plugin-netlify",
+    "gatsby-plugin-layout",
     {
       resolve: "gatsby-source-filesystem",
       options: {
