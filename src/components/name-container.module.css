@@ -1,0 +1,96 @@
+.nameStyleChild {
+  width: 33.2px;
+  height: 33.1px;
+  position: relative;
+}
+.nameAlignment,
+.nameStyle {
+  display: flex;
+  align-items: center;
+}
+.nameStyle {
+  width: 45px;
+  border-radius: 6.32px;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-7xs-9) var(--padding-8xs);
+  box-sizing: border-box;
+}
+.nameAlignment {
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.biancaRamonda {
+  text-decoration: none;
+  height: 8px;
+  letter-spacing: 2.53px;
+  font-weight: 600;
+  color: inherit;
+  display: inline-block;
+  white-space: nowrap;
+}
+.namePositioning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-11xs);
+}
+.contact {
+  text-decoration: none;
+  position: relative;
+  line-height: 24px;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 52px;
+  white-space: nowrap;
+}
+.svgIcon {
+  height: 10px;
+  width: 10px;
+  position: relative;
+}
+.contactInfo {
+  cursor: pointer;
+}
+.contactDetails,
+.contactInfo,
+.nameContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.contactDetails {
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.contactInfo,
+.nameContainer {
+  justify-content: center;
+  font-size: var(--font-size-mini-2);
+  font-family: var(--font-helvetica-neue);
+}
+.nameContainer {
+  display: flex;
+  backdrop-filter: blur(8.5px);
+  background-color: var(--color-gray-200);
+  justify-content: space-between;
+  padding: var(--padding-mid) var(--padding-81xl) var(--padding-mid-1);
+  top: 0;
+  z-index: 99;
+  width: calc(100% - (var(--padding-81xl) * 2));
+  position: fixed;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-black);
+  font-family: var(--font-josefin-sans);
+}
+@media screen and (max-width: 825px) {
+  .nameContainer {
+    width: calc(100% - (var(--padding-xl) * 2));
+    padding-right: var(--padding-xl);
+    padding-left: var(--padding-xl);
+  }
+}
