@@ -181,8 +181,7 @@
 }
 @media screen and (max-width: 825px) {
   .phoneMockup {
-    min-width: 100%;
-    
+    display: none;
   }
   .flickeventsPositioning {
     gap: var(--gap-17xl);
