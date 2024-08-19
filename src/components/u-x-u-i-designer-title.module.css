@@ -62,7 +62,7 @@
 .uXUIDesignerTitle {
   align-self: stretch;
   justify-content: center;
-  padding: 0 var(--padding-xl) var(--padding-5xl);
+  padding: 0 var(--padding-xl) var(--padding-5xs);
   box-sizing: border-box;
   text-align: left;
   font-size: var(--paragraph-size);

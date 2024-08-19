@@ -345,7 +345,8 @@
   font-size: var(--h5-size);
   color: var(--text-color);
   font-family: var(--paragraph);
-  padding-bottom: var(--gap-base);
+  padding-bottom: var(--padding-11xl);
+  padding-top: var(--gap-base);
   padding-right: var(--gap-base);
   margin-bottom: var(--padding-61xl);
 }
