@@ -108,13 +108,16 @@
   flex-direction: row;
 }
 .flickeventsPositioning {
-  flex: 1;
-  padding: var(--padding-29xl) var(--padding-81xl);
+  width: 100%;
+  justify-content: space-between;
+  text-align: left;
   gap: var(--gap-124xl);
 }
 .flickeventsPositioningWrapper {
   align-self: stretch;
-  padding: 0 0 var(--padding-34xl);
+  padding: var(--padding-29xl) var(--padding-81xl);
+  padding-bottom: var(--padding-81xl);
+  justify-content: center;
   text-align: left;
   font-size: var(--paragraph-size);
   color: var(--color-darkslategray-200);
@@ -161,36 +164,30 @@
   position: relative;
 }
 
-@media screen and (max-width: 1425px) {
-  .flickeventsAlignment,
-  .phoneMockup {
-    flex: 1;
-  }
-  .flickeventsPositioning {
-    flex-wrap: wrap;
-    gap: var(--gap-52xl);
-    padding-left: var(--padding-31xl);
-    padding-right: var(--padding-31xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .flickeventsAlignment {
-    min-width: 100%;
-  }
-}
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 1250px) {
   .phoneMockup {
     display: none;
   }
-  .flickeventsPositioning {
-    gap: var(--gap-17xl);
-    padding: var(--padding-12xl) var(--padding-6xl);
+  .flickeventsPositioningWrapper {
+    padding-top: var(--padding-12xl);
+    padding-bottom: var(--padding-61xl);
+    padding-left: var(--padding-17xl);
+    padding-right: var(--padding-17xl);
     box-sizing: border-box;
   }
-  .flickeventsPositioningWrapper {
-    padding-bottom: var(--padding-15xl);
+}
+@media screen and (max-width: 825px) {
+  .flickeventsPositioning {
+    gap: var(--gap-17xl);
+    padding: 0;
     box-sizing: border-box;
+  }
+  .flickeventsAlignment {
+    min-width: 100%;
+  }
+  .flickeventsPositioningWrapper {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
   }
 }
 @media screen and (max-width: 450px) {

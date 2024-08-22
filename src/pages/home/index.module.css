@@ -16,8 +16,7 @@
   box-sizing: border-box;
 }
 .experienceProjects1 {
-  margin: 0;
-  width: 433px;
+  margin: 0 auto;
   position: relative;
   font-size: inherit;
   letter-spacing: -1.12px;
@@ -26,17 +25,12 @@
   font-family: inherit;
   display: flex;
   align-items: center;
-  max-width: 100%;
+  max-width: 1440px;
 }
 .experienceProjects {
-  width: 633px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 0 var(--padding-xl) var(--padding-29xl);
+  width: 100%;
   box-sizing: border-box;
-  max-width: 100%;
+  padding: var(--padding-mid) var(--padding-81xl) var(--padding-mid-1);
 }
 .gridPositioningParent {
   width: 1648px;
@@ -351,6 +345,7 @@
   margin-bottom: var(--padding-61xl);
 }
 .fondoConImagen {
+  max-width: 1440px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -364,17 +359,24 @@
   font-size: 40px;
   color: var(--color-gray-100);
   font-family: var(--font-helvetica-neue);
+  margin: 0 auto;
+}
+@media screen and (max-width: 1250px) {
+  .experienceProjects {
+    padding-right: var(--padding-17xl);
+    padding-left: var(--padding-17xl);
+  }
 }
 @media screen and (max-width: 825px) {
   .fondoConImagen {
     background-image: none;
   }
   .biancaRamonda {
-    padding-bottom: var(--padding-12xl);
+    padding-bottom: 0;
     box-sizing: border-box;
   }
   .experienceProjects {
-    padding-bottom: 0;
+    padding: 0 var(--padding-4xl);
   }
 
   .experienceProjects1 {

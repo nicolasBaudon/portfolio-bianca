@@ -379,7 +379,7 @@
   backdrop-filter: blur(8.9px);
   background-color: var(--color-gray-200);
   align-items: center;
-  padding: var(--padding-61xl) var(--padding-xl);
+  padding: var(--padding-61xl) var(--padding-81xl);
   z-index: 1;
   font-size: var(--font-size-lg);
   color: var(--color-black);
@@ -404,11 +404,16 @@
   padding-right: var(--gap-base);
   margin-bottom: var(--padding-61xl);
 }
-@media screen and (max-width: 1425px) {
+@media screen and (max-width: 1250px) {
   .socialLinksContainer {
     flex-wrap: wrap;
-    padding-right: var(--padding-376xl);
-    box-sizing: border-box;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .contactPortfolios {
+    padding-left: var(--padding-17xl);
+    padding-right: var(--padding-17xl);
+    gap: var(--gap-5xl);
   }
 }
 @media screen and (max-width: 825px) {
@@ -435,7 +440,8 @@
   }
   .contactPortfolios {
     padding-top: 0;
-    gap: var(--gap-5xl);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
   }
 }
 @media screen and (max-width: 450px) {
