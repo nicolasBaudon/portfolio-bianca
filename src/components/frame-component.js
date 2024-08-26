@@ -49,37 +49,8 @@ const FrameComponent = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <div className={styles.phoneMockup}>
-          <div className={styles.iphone13ProParent}>
-            <div className={[styles.iphone13Pro, className].join(" ")}>
-              <div className={[styles.iphone13Pro, className].join(" ")}>
-                <StaticImage
-                  className={styles.screenIcon}
-                  alt=""
-                  src="../images/screen@2x.png"
-                />
-                <StaticImage
-                  className={styles.goldIcon}
-                  alt=""
-                  src="../images/gold@2x.png"
-                />
-              </div>
-            </div>
-            <div className={[styles.iphone13Pro, className].join(" ")}>
-              <div className={[styles.iphone13Pro, className].join(" ")}>
-                <StaticImage
-                  className={styles.screenIcon}
-                  alt=""
-                  src="../images/screen-1@2x.png"
-                />
-                <StaticImage
-                  className={styles.goldIcon}
-                  alt=""
-                  src="../images/gold-1@2x.png"
-                />
-              </div>
-            </div>
-          </div>
+        <div className={styles.devices}>
+          <StaticImage className={styles.imacIcon} loading="lazy" alt="" src='../images/flick.png' />
         </div>
       </div>
     </section>
